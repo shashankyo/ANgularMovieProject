@@ -1,0 +1,28 @@
+<div class="login-container">
+    <img class= "film" src="assets/images/film.png" alt="">
+    <div class="logo">Rotten-Potatoes</div>
+    <div class="desc">Potato Nutrition
+        Fueling Performance
+        Potatoes are a nutrient-dense powerhouse, that provides the energy, potassium and vitamin C you need to fuel your day.
+        
+        Get the Facts
+        Potatoes are more energy-packed than any other popular vegetable, are an excellent source of vitamin C and have more potassium than a banana.
+        
+        In Your Diet
+        Potatoes are naturally fat-free, cholesterol-free and sodium-free with only 110 calories per 5.3-ounce serving.</div>
+</div>
+<div class="login-form">
+    <div class="form-group">
+        <label for="uname">Username</label>
+        <input type="text" name="uname" class="form-control" [(ngModel)]="username"/>
+    </div>
+    <div class="form-group">
+        <label for="pword">Password</label>
+        <input type="password" name="pword" class="form-control" [(ngModel)]="password"/>
+    </div>
+    <div class="btn-container">
+        <div class="error">{{ errorMsg}}</div>
+        <button class="btn btn-dark" (click)="login()">Login</button>
+        
+    </div>
+</div>
